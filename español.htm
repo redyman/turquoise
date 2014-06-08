@@ -32,6 +32,23 @@
 	================================================== -->
 	<link href='http://fonts.googleapis.com/css_family=PT+Serif:400,700,400italic,700italic.html' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css_family=Open+Sans:400italic,300,400,700.html' rel='stylesheet' type='text/css'>
+
+<!-- SCRIPT DE TUMBLR FEED================================================== -->
+	<script type="text/javascript">
+$(document).ready(function(){
+   $('#tumblr').FeedEk({
+   FeedUrl : 'http://redyman.tumblr.com/rss',
+   MaxCount : 10,
+ShowDesc : false,
+ShowPubDate:true,
+DescCharacterLimit:0,
+TitleLinkTarget:'_blank', //_blank estaba por defecto
+DateFormat: 'LLL',
+DateFormatLang:'es'
+  });
+});
+</script>
+<!-- SCRIPT DE TUMBLR FEED=================================================== -->
 </head>
 
 <body data-spy="scroll" data-target="#seccion-topbar" data-offset="60">
@@ -573,7 +590,7 @@
 				<div id="box-testimonials">
 					<div class="item">
 						<blockquote>
-							<p class="quote">Si piensas que los usuarios de tus programas son idiotas, sólo los idiotas usarán tus programas.</p>
+							<p class="quote" id="tumblr">Si piensas que los usuarios de tus programas son idiotas, sólo los idiotas usarán tus programas.</p>
 
 							<h4>Linus Torvalds </h4>
 							<p class="position">"padre"  <em>de Linux</em></p>
@@ -588,7 +605,7 @@
 							<p class="position">Co-Fundador de, <em>Microsoft</em></p>
 						</blockquote>
 					</div><!-- // .item -->
-
+				<p  id="tumblr"></p>
 				</div><!-- // #caja de frases -->
 
 			</div><!-- // .seven -->
@@ -608,8 +625,8 @@
 
 			<div class="ten columns">
 				<ul id="social">
-					<li><a href="http://www.facebook.com" title=""><img src="images/icons/icon_facebook.png" alt="Facebook" /></a></li>
-					<li><a href="http://www.twitter.com" title=""><img src="images/icons/icon_twitter.png" alt="Twitter" /></a></li>
+					<li><a href="http://www.facebook.com/theredyman" title=""><img src="images/icons/icon_facebook.png" alt="Facebook" /></a></li>
+					<li><a href="http://www.twitter.com/redylg" title=""><img src="images/icons/icon_twitter.png" alt="Twitter" /></a></li>
 					<li><a href="http://www.behance.com" title=""><img src="images/icons/icon_behance.png" alt="Behance" /></a></li>
 					<li><a href="http://www.linkedin.com" title=""><img src="images/icons/icon_linkedin.png" alt="Linkedin" /></a></li>
 					<li><a href="http://www.dribbble.com" title=""><img src="images/icons/icon_dribbble.png" alt="Dribbble" /></a></li>
@@ -617,7 +634,7 @@
 			</div><!-- // .ten -->
 
 			<div class="limpio"></div>
-
+<div class="ui-content" id="tumblr" data-inset="true" data-theme="a"></div>
 		</div><!-- // .container -->
 	</div><!-- // #seccion-footer -->
 
@@ -637,26 +654,14 @@
 	<script src="js/jquery.foundation.reveal.js"></script>
 	<script src="js/jquery.ajaxContactForm.js"></script>
 	<script src="js/jquery.custom.js"></script>
+	<script src="js/FeedEk.js"></script>
+	<script src="js/moment.js"></script>
 
 	<!-- Because jQuery opacity (fadeTo) is being rendered in a weird way in IE browsers, these are only loaded on non-IE browsers -->
 	<!--[if !IE]> -->
 		<script src="js/jquery.custom.noIE.js"></script>
 	<!-- <![endif]-->
 	
-	<script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-21237617-7']);
-	  _gaq.push(['_setDomainName', 'typebig.com']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
 
 <!-- End Document
 ================================================== -->
