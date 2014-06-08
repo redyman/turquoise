@@ -20,18 +20,18 @@ $(document).ready(function(){
 		
 		// Check name
 		if( contactName == '' ) {
-			contactError += 'Por favor ponga bien su nombre <br />';
+			contactError += 'Please enter your name<br />';
 		}
 		
 		// Check e-mail
 		if ( contactEmail == '') {
-			contactError += 'Ponga su correo no joda sea serio.<br />';
+			contactError += 'Please enter your e-mail<br />';
 		} else if ( isEmail(contactEmail) !== true ) {
-			contactError += 'Ponga su correo de verdad por que este no vale o esta mal escrito ¬¬<br />';
+			contactError += 'Please enter a valid e-mail address<br />';
 		}
 
 		if( contactMessage == '' ) {
-			contactError += 'Ponga su mensaje, pregunta u opinión.<br />';
+			contactError += 'Please enter your message<br />';
 		}
 		
 		if ( contactCaptcha !== contactCaptchaAnswer ) {
